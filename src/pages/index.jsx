@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import '../style/style.css'
+import Picture from "../components/Picture"
 
 const IndexPage = ({data}) => {
 
@@ -17,11 +18,7 @@ const IndexPage = ({data}) => {
                 <div>
                     <h2>{node.title}</h2>
                     <p>{node.description.description}</p>
-                    <picture>
-                        <source srcset={node.featuredImage.gatsbyImage.images.fallback.srcSet} 
-                            sizes={node.featuredImage.gatsbyImage.images.fallback.sizes} type="image/webp" />
-                        <img src={node.featuredImage.url} alt="" />
-                    </picture>
+                    <Picture {...node.featuredImage}/>
                 </div>
       </main>
       <Footer/>

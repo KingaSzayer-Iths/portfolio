@@ -1,0 +1,11 @@
+# kategorisering
+https://stackoverflow.com/questions/66082585/needs-help-filtering-posts-on-contentful-using-javascript-for-a-next-js-site
+
+# images
+https://www.contentful.com/developers/docs/concepts/images/
+
+# Changing formats
+https://www.contentful.com/developers/docs/references/images-api/#/reference/retrieval/image
+
+# publicera på netlify, hook för uppdatera vid ändrat innehåll
+https://itnext.io/content-management-with-gatsby-netlify-and-contentful-70f03de41602

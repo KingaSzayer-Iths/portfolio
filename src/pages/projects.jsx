@@ -43,6 +43,18 @@ query MyQuery {
             width: 1000, 
             outputPixelDensities: [1,1])
         }
+        featuredImage2 {
+          url
+          gatsbyImage(formats: WEBP, 
+            width: 1000, 
+            outputPixelDensities: [1,1])
+        }
+        featuredImage3 {
+          url
+          gatsbyImage(formats: WEBP, 
+            width: 1000, 
+            outputPixelDensities: [1,1])
+        }
       }
     }
   }

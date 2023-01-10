@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import '../style/style.css'
+import Picture from "../components/Picture"
 
 const Contact = ({data}) => {
 
@@ -16,12 +17,10 @@ const Contact = ({data}) => {
             <h1>Kontakt</h1>
                 <div>
                     <h2>{node.title}</h2>
-                    <p>{node.description.description}</p>
-                    <picture>
-                        <source srcset={node.featuredImage.gatsbyImage.images.fallback.srcSet} 
-                            sizes={node.featuredImage.gatsbyImage.images.fallback.sizes} type="image/webp" />
-                        <img src={node.featuredImage.url} alt="" />
-                    </picture>
+                    <Picture {...node.featuredImage}/>
+                    <a href={node.ePost}>Till E-mail</a>
+                    <a href={node.github}>Till Github</a>
+                    <a href={node.linkedin}>Till Linkedin</a>
                 </div>
         </main>
         <Footer/>
@@ -39,9 +38,9 @@ export const query = graphql`
 query ContactQuery {
   contentfulContact {
     title
-    description {
-      description
-    }
+    ePost
+    github
+    linkedin
     featuredImage {
       gatsbyImage(formats: WEBP, width: 1000, outputPixelDensities: [1,1])
       url

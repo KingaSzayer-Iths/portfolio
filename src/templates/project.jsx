@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import '../style/style.css'
+import Picture from "../components/Picture"
 
 const SingleProjectPage = ({data}) => {
 
@@ -18,11 +19,10 @@ const SingleProjectPage = ({data}) => {
                 <div>
                     <h2>{node.title}</h2>
                     <p>{node.description.description}</p>
-                    <picture>
-                        <source srcset={node.featuredImage.gatsbyImage.images.fallback.srcSet} 
-                            sizes={node.featuredImage.gatsbyImage.images.fallback.sizes} type="image/webp" />
-                        <img src={node.featuredImage.url} alt="" />
-                    </picture>
+                    <Picture {...node.featuredImage}/>
+                    <Picture {...node.featuredImage2}/>
+                    <Picture {...node.featuredImage3}/>
+                    <a href={node.webAddress}>Till projektet</a>
                 </div>
             
             <Link to="/projects/">Till projektöversiktssidan</Link>
@@ -40,10 +40,23 @@ export const query = graphql`
 query SingleProjectQuery($slug: String) {
   contentfulProject(slug: {eq: $slug}) {
     title
+    webAddress
     description {
       description
     }
     featuredImage {
+      gatsbyImage(formats: WEBP, 
+        width: 1000, 
+        outputPixelDensities: [1,1])
+      url
+    }
+    featuredImage2 {
+      gatsbyImage(formats: WEBP, 
+        width: 1000, 
+        outputPixelDensities: [1,1])
+      url
+    }
+    featuredImage3 {
       gatsbyImage(formats: WEBP, 
         width: 1000, 
         outputPixelDensities: [1,1])

@@ -13,9 +13,7 @@ const Projects = ({data}) => {
         <main>
             <h1>Projekt</h1>
             {data.allContentfulProject.edges.map(({node}) => (
-                <article key={node.contentful_id}>
-                    <Project {...node}/>
-                </article>
+              <Project key={node.contentful_id} {...node}/>
             ))}
         </main>
         <Footer/>

@@ -26,7 +26,7 @@ const About = ({data}) => {
                 {node.educations.map(education =>
                   <article key={education.contentful_id}>
                     <h2>{education.intitutionName}</h2>
-                    <h3>{education.program}</h3> 
+                    <h3>{education.program}</h3>
                     <h6>Startdatum:&nbsp;{education.startDate}</h6>
                     <h6>Slutdatum:&nbsp;{education.endDate}</h6>
                     <Picture {...node.featuredImage}/>

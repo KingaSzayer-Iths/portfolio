@@ -18,7 +18,7 @@ const Contact = ({data}) => {
                 <div>
                     <h2>{node.title}</h2>
                     <Picture {...node.featuredImage}/>
-                    <a href={node.ePost}>Till E-mail</a>
+                    <p>{node.ePost}</p>
                     <a href={node.github}>Till Github</a>
                     <a href={node.linkedin}>Till Linkedin</a>
                 </div>

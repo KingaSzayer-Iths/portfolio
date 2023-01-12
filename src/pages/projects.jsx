@@ -27,7 +27,7 @@ export default Projects
 // GraphQL Query
 export const query = graphql`
 query MyQuery {
-    allContentfulProject {
+  allContentfulProject(sort: {title: ASC}) {
     edges {
       node {
         slug 

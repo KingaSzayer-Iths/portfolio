@@ -14,14 +14,17 @@ const IndexPage = ({data}) => {
     <div class="wrapper">
       <Header/>
       <main>
-        <h1>Portfolio</h1>
-          <article className="container">
-            <div className="centered">
-              <h2>{node.title}</h2>
-              <p>{node.description.description}</p>
-            </div>
-            <Picture {...node.featuredImage}/>
-          </article>
+        <div className="page-title">
+          <h1>Portfolio</h1>
+        </div>
+        
+            <article className="container">
+              <div className="centered">
+                <h2>{node.title}</h2>
+                <p>{node.description.description}</p>
+              </div>
+              <Picture {...node.featuredImage}/>
+            </article>
       </main>
       <Footer/>
     </div>

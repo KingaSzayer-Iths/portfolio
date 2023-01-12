@@ -16,6 +16,7 @@ html {
 
 main {
     flex: 1;
+    margin: 20px;
 }
 
 nav ul {
@@ -32,7 +33,11 @@ nav li {
 }
 
 img {
-    width: 100%;
+    /* width: 100%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 a:hover {
@@ -60,7 +65,7 @@ a {
 
 .centered {
     position: absolute;
-    top: 10%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%); 
     color: red;
@@ -76,6 +81,51 @@ a {
     margin: 0 0 40px 0;
 }
 
+.project-post h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: white;
+    text-shadow: 2px 2px 4px black, 0 0 25px lightgrey, 0 0 5px rgb(71, 70, 70);
+    /* line-height: 24px; */
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px red, 0 0 25px lightgray, 0 0 5px grey;
+    
+}
+
+.project-description {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px 0 60px; */
+    /* justify-items: center; */
+    margin: auto;
+    width: 70%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.page-title h1 {
+    color: rgb(175, 159, 162);
+    text-shadow: 2px 2px 4px red, 0 0 25px lightgray, 0 0 5px grey;
+    background-image: linear-gradient(to right, grey , lightgrey);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    letter-spacing: .4em;
+    border-radius: 13px;
+}
+
+
+
 @media only screen and (max-width:480px) {
 
     nav ul {
@@ -90,13 +140,27 @@ a {
 
     .project-post {
         background-color: gray;
+        box-shadow: 5px 10px #b8b3b3;
         border-radius: 20px;
+    }
+
+    .project-post h2 {
+        color: white;
+        text-shadow: 2px 2px 4px red, 0 0 25px lightgray, 0 0 5px grey;
     }
 
 }
 
 @media only screen and (max-width:768px) {
 
-    
+    /* .project-post {
+        background-color: rgb(124, 185, 251);
+        border-radius: 20px;
+    }
+
+    .project-post h2 {
+        color: white;
+        text-shadow: 2px 2px 4px rgb(254, 254, 189), 0 0 25px lightgray, 0 0 5px grey;
+    } */
 
 }

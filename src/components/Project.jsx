@@ -11,8 +11,10 @@ const Project = (node) => {
         {/* <Picture {...node.featuredImage}/>
         <Picture {...node.featuredImage2}/> */}
         <Picture {...node.featuredImage3}/>
+        <div className="project-description">
         <p>{node.description.description}</p>
-        <Link to={node.slug}>Läs mer</Link>
+        </div>
+        <Link to={node.slug}>..Se mer</Link>
     </article>
   )
 }

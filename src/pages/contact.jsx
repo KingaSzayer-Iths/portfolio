@@ -15,10 +15,10 @@ const Contact = ({data}) => {
         <Header/>
         <main>
             <h1>Kontakt</h1>
-                <div>
-                    <h2>{node.title}</h2>
+                 <div>
                     <Picture {...node.featuredImage}/>
-                    <p>{node.ePost}</p>
+                    <h2>{node.title}</h2>
+                    <a >E-mail: {node.ePost}</a>
                     <a href={node.github}>Till Github</a>
                     <a href={node.linkedin}>Till Linkedin</a>
                 </div>

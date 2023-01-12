@@ -32,10 +32,11 @@ const About = ({data}) => {
                     <Picture {...node.featuredImage}/>
                   </article> 
                 )}
+                
                 </section>
 
                 <section>
-                {node.jobs.map(job =>
+                {node.jobs.sort((a,b)=>new Date(b.startDate).getTime()-new Date(a.startDate).getTime()).map(job =>
                   <article key={job.contentful_id}>
                     <h2>{job.companyName}</h2>
                     <h3>{job.jobTitle}</h3>

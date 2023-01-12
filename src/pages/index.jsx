@@ -19,6 +19,12 @@ const IndexPage = ({data}) => {
         </div>
         
             <article className="container">
+              <div className="snurr">
+                <h5 class="text-location">HTML</h5>
+                <h5 class="text-location">CMS</h5>
+                <h5 class="text-location">CSS</h5>
+                <h5 class="text-location">JS</h5>
+                </div>
               <div className="centered">
                 <h2>{node.title}</h2>
                 <p>{node.description.description}</p>

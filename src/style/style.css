@@ -126,6 +126,44 @@ h2 {
 
 
 
+
+
+
+.snurr {
+    width: 60px;
+    height: 60px;
+    /*border-radius: 180px;*/
+    /*background: red;*/
+    background-image: linear-gradient(to right, red , lightgrey);
+    transition: width 2s, height 2s, transform 2s;
+    border-radius: 20px;
+    z-index: 99;
+    /* margin: 0 50px; */
+    text-shadow: 2px 2px 4px black, 0 0 25px lightgrey, 0 0 5px rgb(71, 70, 70);
+    
+  }
+  
+  .snurr:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 180px;
+    transform: rotate(360deg);
+    
+  }
+  
+  .text-location {
+      position: relative; 
+      top: 10%;
+      left: 0%;
+      
+  }
+
+
+
+
+
+
+
 @media only screen and (max-width:480px) {
 
     nav ul {
@@ -147,6 +185,10 @@ h2 {
     .project-post h2 {
         color: white;
         text-shadow: 2px 2px 4px red, 0 0 25px lightgray, 0 0 5px grey;
+    }
+
+    .snurr {
+        margin: 0 35px;
     }
 
 }

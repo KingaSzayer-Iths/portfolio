@@ -31,10 +31,16 @@ nav li {
     
 }
 
+img {
+    width: 100%;
+}
+
 a:hover {
     color: red;
-    border: solid whitesmoke 1px ;
+    border: 1px solid whitesmoke;
+    /* border: 3px solid transparent; */
     border-radius: 10px;
+    /* background-color: rgb(175, 172, 172); */
 }
 
 a {
@@ -43,6 +49,7 @@ a {
     padding: 10px 30px;
     display: block;
     white-space: nowrap;
+    border: 1px solid transparent;
 }
 
 .container {

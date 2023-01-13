@@ -124,14 +124,9 @@ h2 {
     border-radius: 13px;
 }
 
-
-
-
-
-
 .snurr {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     /*border-radius: 180px;*/
     /*background: red;*/
     background-image: linear-gradient(to right, red , lightgrey);
@@ -144,8 +139,8 @@ h2 {
   }
   
   .snurr:hover {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 180px;
     transform: rotate(360deg);
     
@@ -185,10 +180,12 @@ h2 {
     .project-post h2 {
         color: white;
         text-shadow: 2px 2px 4px red, 0 0 25px lightgray, 0 0 5px grey;
+        
     }
 
     .snurr {
-        margin: 0 35px;
+        
+        margin: 0 33px;
     }
 
 }

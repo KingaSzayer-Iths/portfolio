@@ -14,18 +14,20 @@ const SingleProjectPage = ({data}) => {
     <div class="wrapper">
         <Header/>
         <main>
+        
             <h1>Projekt</h1>
-            
                 <div>
                     <h2>{node.title}</h2>
                     <p>{node.description.description}</p>
-                    <Picture {...node.featuredImage}/>
-                    <Picture {...node.featuredImage2}/>
-                    <Picture {...node.featuredImage3}/>
+                    <div className="screenshots">
+                      <Picture {...node.featuredImage}/>
+                      <Picture {...node.featuredImage2}/>
+                      <Picture {...node.featuredImage3}/>
+                    </div>
                     <a href={node.webAddress}>Till projektet</a>
                 </div>
             
-            <Link to="/projects/">Till projektöversiktssidan</Link>
+            <Link to="/projects/">Till alla projekt</Link>
         </main>
         <Footer/>
     </div>

@@ -15,7 +15,7 @@ const Contact = ({data}) => {
         <Header/>
         <main>
             <h1>Kontakt</h1>
-                 <div>
+                 <div className="contact-image">
                     <Picture {...node.featuredImage}/>
                     <h2>{node.title}</h2>
                     <a >E-mail: {node.ePost}</a>

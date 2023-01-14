@@ -18,24 +18,26 @@ const About = ({data}) => {
             <h1>Om mig</h1>
                 <div>
                     <h2>{node.name}</h2>
-                    <p>{node.description.description}</p>
-                    <Picture {...node.featuredImage}/>
+                    <div className="about-description">
+                        <p>{node.description.description}</p>
+                    </div>
+                    {/* <Picture {...node.featuredImage}/> */}
                 </div>
                 
-                <section>
+                <section className="edu">
                 {node.educations.map(education =>
                   <article key={education.contentful_id}>
                     <h2>{education.intitutionName}</h2>
                     <h3>{education.program}</h3>
                     <h6>Startdatum:&nbsp;{education.startDate}</h6>
                     <h6>Slutdatum:&nbsp;{education.endDate}</h6>
-                    <Picture {...node.featuredImage}/>
+                    {/* <Picture {...node.featuredImage}/> */}
                   </article> 
                 )}
-                
                 </section>
 
-                <section>
+                
+                <section  className="job">
                 {node.jobs.sort((a,b)=>new Date(b.startDate).getTime()-new Date(a.startDate).getTime()).map(job =>
                   <article key={job.contentful_id}>
                     <h2>{job.companyName}</h2>

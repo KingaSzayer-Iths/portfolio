@@ -1,1 +1,76 @@
 v18.12.1
+
+https://www.w3schools.com/howto/howto_css_image_text.asp
+
+
+				<div class="row bottom">
+					<div class="col-xs-12">
+						<p>Copyright &copy; Grupp X, 2016</p>
+					</div>
+				</div>
+				
+
+WordPress
+		<div class="footer-copyright">
+            © <?php
+            $dateY = date('Y');
+            echo "Kinga Szayer, " . $dateY;
+            ?> Copyright.
+
+            <!-- <?php echo "<h3>" . date('Y') . "</h3>"; ?> -->
+            <!-- Hook for WordPress script tags -->
+            <?php wp_footer(); ?>
+        </div>
+
+
+That is because border width adds to the element's width, thus when an additional width is added to an element on hover, it will alter the normal layout flow.
+
+You can easily fix it by adding a 3px transparent border in the static state:
+
+.card { border: 3px solid transparent; }
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 80px;
+  height: 80px;
+  /*border-radius: 180px;*/
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  border-radius: 20px;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  border-radius: 180px;
+  transform: rotate(360deg);
+  
+}
+
+.text-location {
+	position: relative; 
+    top: 10%;
+    left: 20%;
+    
+}
+</style>
+</head>
+<body>
+
+<h1>Transition + Transform</h1>
+
+<p>Hover over the div element below:</p>
+
+<div><h3 class="text-location">HTML</h3>
+<h3 class="text-location">CMS</h3>
+<h3 class="text-location">CSS</h3>
+<h3 class="text-location">JS</h3>
+</div>
+
+</body>
+</html>

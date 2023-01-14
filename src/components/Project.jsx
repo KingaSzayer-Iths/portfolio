@@ -14,7 +14,9 @@ const Project = (node) => {
         <div className="project-description">
         <p>{node.description.description}</p>
         </div>
-        <Link to={node.slug}>..Se mer</Link>
+        <div className="show-more">
+        <Link to={node.slug}>Mer...</Link>
+        </div>
     </article>
   )
 }

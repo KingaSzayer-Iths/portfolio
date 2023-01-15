@@ -45,11 +45,23 @@ img {
     /* display: block; */
     /* margin-left: auto; */
     /* margin-right: auto; */
-    width: 40%;
+    width: 30%; 
     margin: 30px;
-
 }
+.contact-info p {
+    text-align: center;
+}
+.contact-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+}
 
 a:hover {
     color: red;
@@ -177,18 +189,21 @@ h2 {
       
   }
 
+  
   .show-more {
       /* color: black; */
       text-decoration-line: underline;
-      margin: 10%;
+      /* margin: 10%; */
       
       /* display: block; */
     /* margin-left: auto; */
     /* margin-right: auto; */
-    width: 10%;
+    width: 100px;
       background-color: whitesmoke;
       border-radius: 10px;
       font-size: small;
+      margin-left: 30px;
+
   }
 
   .copy-bottom {
@@ -204,10 +219,27 @@ h2 {
     border-top: 2px solid whitesmoke;
     /* border-bottom: 2px solid whitesmoke; */
     box-shadow: 5px 10px #0c0c0c, 0 0 25px lightgrey, 0 0 5px rgb(71, 70, 70);
-    padding: 0 0 20px 0;
     margin: 0 0 40px 0;
     border-radius: 20px;
+    padding: 20px;
+    /* padding: 0 0 20px 0; */
 }
+
+.contact-info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-top: 2px solid whitesmoke;
+    /* border-bottom: 2px solid whitesmoke; */
+    box-shadow: 5px 10px #0c0c0c, 0 0 25px lightgrey, 0 0 5px rgb(71, 70, 70);
+    margin: 0 0 40px 0;
+    border-radius: 20px;
+    padding: 20px;
+    /* width: 60%; */
+
+    /* padding: 0 0 20px 0; */
+}
+
 
 /* .job {
     border-top: 2px solid whitesmoke;
@@ -253,13 +285,29 @@ h2 {
         margin: 0 33px;
     }
 
-    .show-more {
-        width: 30%;
+   
+    
+        /* display: block; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* width: 90%; */
+
+
+    .contact-image img {
+        margin: 40px;
     }
 
 }
 
 @media only screen and (max-width:768px) {
+
+    .contact-image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        margin: 30px;
+    }
 
     /* .project-post {
         background-color: rgb(124, 185, 251);

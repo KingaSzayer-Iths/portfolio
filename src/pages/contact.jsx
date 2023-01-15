@@ -14,14 +14,20 @@ const Contact = ({data}) => {
     <div class="wrapper">
         <Header/>
         <main>
-            <h1>Kontakt</h1>
-                 <div className="contact-image">
-                    <Picture {...node.featuredImage}/>
+            {/* <h1>Kontakt</h1> */}
+                 <section className="contact-image">
+                    {/* <Picture {...node.featuredImage}/> */}
                     <h2>{node.title}</h2>
-                    <a >E-mail: {node.ePost}</a>
-                    <a href={node.github}>Till Github</a>
-                    <a href={node.linkedin}>Till Linkedin</a>
-                </div>
+                    <article className="contact-info">
+                        <Picture {...node.featuredImage}/>
+                        
+                        
+                        <a href={node.github}>Till Github</a>
+                      <a href={node.linkedin}>Till Linkedin</a>
+                      
+                      <p>{node.ePost}</p>
+                    </article>
+                </section>
         </main>
         <Footer/>
     </div>

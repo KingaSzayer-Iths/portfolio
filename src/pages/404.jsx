@@ -4,9 +4,12 @@ import { Link } from "gatsby"
 const NotFoundPage = () => {
   return (
     <main>
-      <h1>Page not found</h1>
-      <Link to="/">Go home</Link>.
-
+    <article className="not-found">
+      <h1>404-fel (Sidan kunde inte hittas)</h1>
+      <h2>
+      <Link to="/">Gå tillbaka till startsidan</Link>.
+      </h2>
+      </article>
     </main>
   )
 }

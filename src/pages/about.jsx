@@ -25,6 +25,7 @@ const About = ({data}) => {
                 </div>
                 
                 <section className="edu">
+                {/* Loops all educations and creates article */}
                 {node.educations.map(education =>
                   <article key={education.contentful_id}>
                     <h2>{education.intitutionName}</h2>
@@ -38,6 +39,8 @@ const About = ({data}) => {
 
                 
                 <section  className="job">
+                 {/* Sort jobs so newest on top.  */}
+                 {/* https://stackoverflow.com/questions/10123953/how-to-sort-an-object-array-by-date-property#:~:text=Using%20the%20arrow%20function%20way */}
                 {node.jobs.sort((a,b)=>new Date(b.startDate).getTime()-new Date(a.startDate).getTime()).map(job =>
                   <article key={job.contentful_id}>
                     <h2>{job.companyName}</h2>

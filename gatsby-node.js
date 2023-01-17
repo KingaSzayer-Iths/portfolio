@@ -11,9 +11,16 @@ exports.createPages = async ({graphql, actions}) => {
             }
           }
         }
+        allContentfulCategory {
+          edges {
+            node {
+              slug
+            }
+          }
+        }
       }
     `)
-      
+      //Create page for each project
       data.allContentfulProject.edges.forEach(edge => {
           actions.createPage ({
               //URL
@@ -25,5 +32,17 @@ exports.createPages = async ({graphql, actions}) => {
           })
 
       })
+      //Create page for each category
+      data.allContentfulCategory.edges.forEach(edge => {
+        actions.createPage ({
+            //URL
+            path: '/projects/' + edge.node.slug,
+            //Tamplate
+            component: path.resolve('./src/templates/category.jsx'),
+            context: {slug: edge.node.slug}
+
+        })
+
+    })
 
 }

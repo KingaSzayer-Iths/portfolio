@@ -14,9 +14,15 @@ const Project = (node) => {
         <div className="project-description">
           <p>{node.description.description}</p>
         </div>
+        <div className="links">
         <div className="show-more">
           <Link to={node.slug}>Mer...</Link>
         </div>
+        <div className="show-more">
+          <Link to={node.category.slug}>{node.category.categoryName}</Link>
+        </div>
+        </div>
+        
     </article>
   )
 }

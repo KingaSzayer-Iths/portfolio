@@ -11,10 +11,13 @@ const Projects = ({data}) => {
     <div class="wrapper">
         <Header/>
         <main>
-            <h1>Projekt</h1>
-            {/* Loops all projects and creates Project component */}
+            <h1>Kategori</h1>
+{/* Loops all projects and creates Project component */}
             {data.allContentfulProject.edges.map(({node}) => (
+              <>
+              <p>{node.category.categoryName}</p>
               <Project key={node.contentful_id} {...node}/>
+              </>
             ))}
         </main>
         <Footer/>
@@ -26,17 +29,15 @@ const Projects = ({data}) => {
 export default Projects
 
 // GraphQL Query
-// Project sorted on title ascending
 export const query = graphql`
-query MyQuery {
-  allContentfulProject(sort: {title: ASC}) {
+query MyQuery($slug: String) {
+  allContentfulProject(filter: {category: {slug: {eq: $slug}}}) {
     edges {
       node {
         slug 
         title
         category {
           categoryName
-          slug
         }
         description {
           description

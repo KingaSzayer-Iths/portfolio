@@ -9,3 +9,7 @@ https://www.contentful.com/developers/docs/references/images-api/#/reference/ret
 
 # publicera på netlify, hook för uppdatera vid ändrat innehåll
 https://itnext.io/content-management-with-gatsby-netlify-and-contentful-70f03de41602
+
+# nvmrc
+https://stackoverflow.com/questions/66880068/gatsby-3-x-netlify#:~:text=In%20the%20root%20of%20your%20repository
+

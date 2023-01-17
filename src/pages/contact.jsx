@@ -20,11 +20,8 @@ const Contact = ({data}) => {
                     <h2>{node.title}</h2>
                     <article className="contact-info">
                         <Picture {...node.featuredImage}/>
-                        
-                        
                         <a href={node.github}>Till Github</a>
                       <a href={node.linkedin}>Till Linkedin</a>
-                      
                       <p>{node.ePost}</p>
                     </article>
                 </section>

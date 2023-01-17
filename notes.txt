@@ -9,6 +9,7 @@ https://www.contentful.com/developers/docs/references/images-api/#/reference/ret
 
 # publicera på netlify, hook för uppdatera vid ändrat innehåll
 https://itnext.io/content-management-with-gatsby-netlify-and-contentful-70f03de41602
+https://itnext.io/content-management-with-gatsby-netlify-and-contentful-70f03de41602#:~:text=On%20Netify%20click%20on%20Site%20Settings%20and%20then%20in%20the%20left%20menu%2C%20select%20Build%20%26%20Deploy.%20Look%20for%20the%20Add%20build%20hook%20button%20and%20click%20on%20it%2C%20giving%20the%20build%20hook%20a%20name%20(I%20am%20using%20%E2%80%9Ccontentful%E2%80%9D)%20and%20then%20click%20on%20Save.
 
 # nvmrc
 https://stackoverflow.com/questions/66880068/gatsby-3-x-netlify#:~:text=In%20the%20root%20of%20your%20repository

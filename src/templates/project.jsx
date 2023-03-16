@@ -19,10 +19,21 @@ const SingleProjectPage = ({data}) => {
                 <div>
                     <h2>{node.title}</h2>
                     <p>{node.description.description}</p>
-                    <div className="screenshots">
+                    {/* <div className="screenshots">
                       <Picture {...node.featuredImage}/>
                       <Picture {...node.featuredImage2}/>
                       <Picture {...node.featuredImage3}/>
+                    </div> */}
+                    <div id="carousel-container">
+                    <div></div>
+                      <input class="sel" id="in1" type="radio" name="position" />
+                      <input class="sel" id="in2" type="radio" name="position" />
+                      <input class="sel" id="in3" type="radio" name="position" />
+                      <section id="carousel">
+                        <div class="item"><Picture {...node.featuredImage}/></div>
+                        <div class="item"><Picture {...node.featuredImage2}/></div>
+                        <div class="item"><Picture {...node.featuredImage3}/></div>
+                      </section>
                     </div>
                     <a href={node.webAddress}>Till projektet</a>
                 </div>

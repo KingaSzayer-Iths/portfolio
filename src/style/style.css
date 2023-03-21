@@ -290,6 +290,40 @@ input:nth-of-type(3):checked ~ #carousel {
   --position: 3;
 }
 
+#fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0a0a0a;
+  border-radius: 50%;
+}
+
+.project-button ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+.project-button li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(186 190 229);
+  text-decoration: none;
+  margin: 10px;
+  padding: 0;
+  justify-items: flex-start;
+}
+
+.project-button a {
+  color: rgb(14 14 15);
+  text-shadow: 2px 2px 4px #bc9f9f, 0 0 25px lightgray, 0 0 95px grey;
+  padding: 0px;
+  margin: 2px;
+}
+
 
 @media only screen and (max-width:768px) {
 
@@ -323,6 +357,12 @@ input:nth-of-type(3):checked ~ #carousel {
 
 @media only screen and (max-width:480px) {
 
+  .project-button ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+  }
+
     #carousel-container {
         height: 340px;
         grid-template-rows: 280px 20px;
@@ -333,6 +373,7 @@ input:nth-of-type(3):checked ~ #carousel {
         width: 120%;
       }
 
+      
       div.item {
         transform: rotateY(calc(-10deg * var(--r)))
           translateX(calc(-300px * var(--r)));

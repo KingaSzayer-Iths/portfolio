@@ -6,7 +6,7 @@ import '../style/style.css'
 const Project = (node) => {
 
   return (
-    <article className="project-post"> 
+    <article id={node.slug} className="project-post"> 
         <h2>{node.title}</h2>
         {/* <Picture {...node.featuredImage}/>
         <Picture {...node.featuredImage2}/> */}

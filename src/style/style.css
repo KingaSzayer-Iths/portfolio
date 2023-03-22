@@ -36,7 +36,7 @@ main {
   /* border-radius: 50%; */
   display: flex;
   justify-content: center;
-  font-size: xxx-large;
+  font-size: 56px;
   font-family: 'Great Vibes', cursive;
   margin: 12px;
 }

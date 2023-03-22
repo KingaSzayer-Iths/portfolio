@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Great+Vibes&display=swap');
+
 
 body {
     margin: 0;
@@ -7,6 +9,11 @@ html {
     font-size: 62.5%;
     background-color: #0c0c0c;
     color: whitesmoke;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -22,10 +29,27 @@ main {
     margin: 20px 40px;
 }
 
+.logo {
+  /* background-image: linear-gradient(to left, red , lightgrey); */
+  color: whitesmoke;
+  /* width: 70px; */
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  font-size: xxx-large;
+  font-family: 'Great Vibes', cursive;
+  margin: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 nav li {
@@ -145,7 +169,7 @@ h2 {
 .snurr {
     width: 45px;
     height: 45px;
-    /*border-radius: 180px;*/
+    /* border-radius: 180px; */
     /*background: red;*/
     background-image: linear-gradient(to right, red , lightgrey);
     transition: width 2s, height 2s, transform 2s;
@@ -327,6 +351,10 @@ input:nth-of-type(3):checked ~ #carousel {
 
 @media only screen and (max-width:768px) {
 
+    .logo {
+      width: 70px;
+    }
+
     .contact-image img {
         display: block;
         margin-left: auto;
@@ -351,16 +379,28 @@ input:nth-of-type(3):checked ~ #carousel {
         transform: rotateY(calc(-10deg * var(--r)))
           translateX(calc(-600px * var(--r)));
       }
+    
 
 }
 
 
 @media only screen and (max-width:480px) {
 
-  .project-button ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px;
+    .logo {
+        border-radius: 50%;
+        height: 70px;
+        display: none;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+  }
+
+    .project-button ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
   }
 
     #carousel-container {

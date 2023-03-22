@@ -3,7 +3,10 @@ import Nav from "./Nav"
 
 const Header = () => {
   return (
-    <Nav/>
+    <div class="header-container">
+      <div className="logo">Ks</div>
+      <Nav/>
+    </div>
   )
 }
 

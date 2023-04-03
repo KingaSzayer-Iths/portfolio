@@ -22,9 +22,10 @@ html {
     min-height: 100vh;
     font-family: 'DM Sans', sans-serif; 
     font-size: 1.6em;
+    margin: 20px 40px;
 }
 
-main {
+xmain {
     flex: 1;
     margin: 20px 40px;
 }
@@ -65,8 +66,8 @@ img {
 }
 
 .contact-image img {
-    width: 30%; 
-    margin: 30px;
+    /* width: 30%;  */
+    /* margin: 30px; */
 }
 
 .contact-info p {
@@ -74,9 +75,9 @@ img {
 }
 
 .contact-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto;  */
 }
 
 a:hover {
@@ -193,8 +194,8 @@ h2 {
 
   .links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
   .show-more {
@@ -232,6 +233,20 @@ h2 {
     border-radius: 20px;
     padding: 20px;
 }
+
+.contact-links {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+ } 
+/* 
+ .links a {
+   display: flex;
+   justify-content: center;
+ } */
 
 .not-found h1 {
     display: block;
@@ -450,7 +465,7 @@ input:nth-of-type(3):checked ~ #carousel {
     }
 
     .contact-image img {
-        margin: 40px;
+        /* margin: 40px; */
     }
 
 }

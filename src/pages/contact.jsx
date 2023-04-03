@@ -19,10 +19,15 @@ const Contact = ({data}) => {
                     {/* <Picture {...node.featuredImage}/> */}
                     <h2>{node.title}</h2>
                     <article className="contact-info">
+                      <div className="contact-links">
                         <Picture {...node.featuredImage}/>
-                        <a href={node.github}>Till Github</a>
-                      <a href={node.linkedin}>Till Linkedin</a>
+                        <div className="links">
+                          <a href={node.github}>Till Github</a>
+                          <a href={node.linkedin}>Till Linkedin</a>
+                        </div>
+                      </div>
                       <p>{node.ePost}</p>
+                      
                     </article>
                 </section>
         </main>

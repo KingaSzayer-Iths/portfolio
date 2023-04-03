@@ -3,7 +3,9 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import '../style/style.css'
+import arrowUp from "../images/arrow-up32x32.png"
 import Picture from "../components/Picture"
+
 
 
 const About = ({data}) => {
@@ -51,7 +53,7 @@ const About = ({data}) => {
                   </article> 
                 )}
                 </section>
-
+                <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /></a>
         </main>
         <Footer/>
     </div>

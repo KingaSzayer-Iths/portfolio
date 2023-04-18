@@ -21,7 +21,7 @@ const Contact = ({data}) => {
                     <article className="contact-info">
                       <div className="contact-links">
                         <Picture {...node.featuredImage}/>
-                        <div className="links">
+                        <div className="xlinks">
                           <a href={node.github}>Till Github</a>
                           <a href={node.linkedin}>Till Linkedin</a>
                         </div>

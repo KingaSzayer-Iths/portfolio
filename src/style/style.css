@@ -110,13 +110,14 @@ a {
 }
 
 .project-post {
-    background-color: rgb(139, 164, 134);
+    /* background-color: rgb(139, 164, 134); */
     border-radius: 20px;
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
     padding: 0 0 20px 0;
     margin: 0 0 40px 0;
+    background: linear-gradient(-35deg, rgb(139, 164, 134) 50%, #ECE5DB 50%);
 }
 
 .project-post h2 {
@@ -194,8 +195,8 @@ h2 {
 
   .links {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
   .show-more {
@@ -445,9 +446,13 @@ input:nth-of-type(3):checked ~ #carousel {
     }
 
     .project-post {
-        background-color: gray;
+        /* background-color: gray; */
         box-shadow: 5px 10px #b8b3b3;
         border-radius: 20px;
+        background: linear-gradient(35deg, gray 50%, #ECE5DB 50%);
+        /* background: linear-gradient(35deg, rgb(190 175 175) 50%, #ECE5DB 50%); */
+        
+        
     }
 
     .project-post h2 {

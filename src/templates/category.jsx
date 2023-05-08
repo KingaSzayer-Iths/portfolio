@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import '../style/style.css'
-import Project from "../components/Project"
+import CategoryProject from "../components/CategoryProject"
 
 const Projects = ({data}) => {
   return (
@@ -16,7 +16,7 @@ const Projects = ({data}) => {
             {data.allContentfulProject.edges.map(({node}) => (
               <>
               <p>{node.category.categoryName}</p>
-              <Project key={node.contentful_id} {...node}/>
+              <CategoryProject key={node.contentful_id} {...node}/>
               </>
             ))}
         </main>

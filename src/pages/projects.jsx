@@ -6,6 +6,7 @@ import '../style/style.css'
 import Project from "../components/Project"
 import arrowUp from "../images/arrow-up32x32.png"
 
+
 const Projects = ({data}) => {
   return (
     <>
@@ -30,9 +31,11 @@ const Projects = ({data}) => {
             </aside>
             {/* Loops all projects and creates Project component */}
             {data.allContentfulProject.edges.map(({node}) => (
-              <Project key={node.contentful_id} {...node}/>
+              <>
+                <Project key={node.contentful_id} {...node}/>
+              </>
             ))}
-            <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /></a>
+            {/* <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /></a> */}
         </main>
         <Footer/>
     </div>

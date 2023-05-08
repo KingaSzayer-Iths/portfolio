@@ -53,7 +53,7 @@ const About = ({data}) => {
                   </article> 
                 )}
                 </section>
-                <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /></a>
+                {/* <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /></a> */}
         </main>
         <Footer/>
     </div>

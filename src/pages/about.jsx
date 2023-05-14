@@ -5,7 +5,30 @@ import Footer from "../components/Footer"
 import '../style/style.css'
 import arrowUp from "../images/arrow-up32x32.png"
 import Picture from "../components/Picture"
+import { BLOCKS, MARKS } from "@contentful/rich-text-types"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
+const Bold = ({ children }) => <span className="richtext-bold">{children}</span>
+const Text = ({ children }) => <p className="about-description">{children}</p>
+
+const options = {
+  renderMark: {
+    [MARKS.BOLD]: text => <Bold>{text}</Bold>,
+  },
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+    [BLOCKS.EMBEDDED_ASSET]: node => {
+      return (
+        <>
+          <h2>Embedded Asset</h2>
+          <pre>
+            <code>{JSON.stringify(node, null, 2)}</code>
+          </pre>
+        </>
+      )
+    },
+  },
+}
 
 
 const About = ({data}) => {
@@ -20,9 +43,8 @@ const About = ({data}) => {
             <h1>Om mig</h1>
                 <div>
                     <h2>{node.name}</h2>
-                    <div className="about-description">
-                        <p>{node.description.description}</p>
-                    </div>
+                        {/* <p>{node.description.description}</p> */}
+                        <div>{renderRichText(node.description, options)}</div>
                     {/* <Picture {...node.featuredImage}/> */}
                 </div>
                 
@@ -74,7 +96,7 @@ query AboutQuery {
             url
         }
         description {
-            description
+            raw
         }
         educations {
             contentful_id

@@ -499,7 +499,7 @@ input:nth-of-type(3):checked ~ #carousel {
 
 
     .logo {
-      width: 70px;
+      width: 0px;
     }
 
     .contact-image img {

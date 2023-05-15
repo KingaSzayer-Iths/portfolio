@@ -37,18 +37,57 @@
 
 import * as React from "react"
 import { Link } from "gatsby"
+import {useState} from "react"
+import Hamburger from "./Hamburger"
 
 const Nav = () => {
-  return (
+
+  const [hamburgerOpen, setHamburgerOpen] = useState( false )
+
+  const toggleHamburger = () => {
+    setHamburgerOpen( !hamburgerOpen)
+  }
+
+  return (<>
     <nav>
-        <ul>
+        <ul className="navigation">
             <li><Link to="/">Hem</Link></li>
             <li><Link to="/about">Om mig</Link></li>
             <li><Link to="/contact">Kontakt</Link></li>
             <li><Link to="/projects">Projekt</Link></li>
         </ul>
+        <div className="hamburger" onClick={toggleHamburger}>
+        <Hamburger isOpen={hamburgerOpen} />
+        </div>
     </nav>
-  )
+
+    <style jsx>{
+      `@media only screen and (max-width: 480px){
+        .navigation {
+          display: ${hamburgerOpen ? 'flex' : 'none'};
+          background-color: lightgrey;
+          {/* height: 94vh; */}
+          width: 40vw;
+          margin-top: 50px;
+          flex-direction: column;
+          gap: 5px;
+          position: absolute;
+          right: 0px;
+          font-size: 1.7rem;
+          z-index: 99;
+          border-radius: 10px;
+        }
+
+        .navigation li {
+          margin-top: 5px;
+        }
+
+        .navigation a {
+         color: black;
+        }
+      }`
+    }</style>
+  </>)
 }
 
 export default Nav

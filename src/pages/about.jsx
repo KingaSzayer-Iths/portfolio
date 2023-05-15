@@ -10,10 +10,12 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 const Bold = ({ children }) => <span className="richtext-bold">{children}</span>
 const Text = ({ children }) => <p className="about-description">{children}</p>
+const Underline = ({ children }) => <span className="richtext-underline">{children}</span>
 
 const options = {
   renderMark: {
     [MARKS.BOLD]: text => <Bold>{text}</Bold>,
+    [MARKS.UNDERLINE]: text => <Underline>{text}</Underline>
   },
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,

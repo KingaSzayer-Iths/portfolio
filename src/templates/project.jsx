@@ -65,7 +65,7 @@ const SingleProjectPage = ({data}) => {
                     {/* <a href={node.webAddress}>Till projektet</a> */}
                 </div>
             
-            <div id="back-button"><Link  to="/projects/"><img src={arrowLeft} alt="Back button " /></Link></div>
+            <div id="back-button"><Link  to="/projects/"><img src={arrowLeft} alt="Back button " />Back</Link></div>
         </main>
         <Footer/>
     </div>

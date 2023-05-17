@@ -37,9 +37,9 @@ xmain {
   /* border-radius: 50%; */
   display: flex;
   justify-content: center;
-  font-size: 56px;
+  font-size: 42px;
   font-family: 'Great Vibes', cursive;
-  margin: 12px;
+  margin: 1px;
 }
 
 nav {

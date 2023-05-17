@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="copy-bottom">
       <p>Copyright &copy; Kinga Szayer, {(new Date().getFullYear())}</p>
-      <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /></a>
+      <a href="#" id="fab"><img src={arrowUp} alt="Scroll to top " /><p>Up</p></a>
    </div>
   )
 }

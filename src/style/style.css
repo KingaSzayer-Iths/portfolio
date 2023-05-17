@@ -643,7 +643,7 @@ input:nth-of-type(3):checked ~ #carousel {
 
   #back-button a {
     position: fixed;
-    left: 20px;
+    left: 15px;
     bottom: 40px;
     background-color: #0a0a0a;
     /* border: #888888 solid 1px; */
@@ -660,7 +660,7 @@ input:nth-of-type(3):checked ~ #carousel {
   #fab {
     position: fixed;
     bottom: 42px;
-    right: 20px;
+    right: 15px;
     background-color: #0a0a0a;
     border-radius: 50%;
     opacity: 60%;

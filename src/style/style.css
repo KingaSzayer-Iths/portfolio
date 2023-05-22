@@ -178,6 +178,7 @@ h2 {
     border-radius: 20px;
     z-index: 99;
     text-shadow: 2px 2px 4px #0c0c0c, 0 0 25px lightgrey, 0 0 5px rgb(71, 70, 70);
+    margin: 0 0 -10px 0;
 }
   
   .snurr:hover {
@@ -492,10 +493,52 @@ input:nth-of-type(3):checked ~ #carousel {
   }
 }
 
+@keyframes blink {
+  0% {
+    background: lightgrey;
+  }
+  10% {
+    background: white;
+  }
+  25% {
+    background: red;
+  }
+  38% {
+    background: lightgrey;
+  }
+  /* 55% {
+    background: black;
+  } */
+  65% {
+    background: white;
+  }
+  75% {
+    background: red;
+  }
+  89% {
+    background: whitesmoke;
+  }
+  100% {
+    background: grey;
+  }
+  
+}
+
+.image-top {
+  height: 10px;
+  width: 70%;
+  animation: blink 10s infinite;
+  border-radius: 95px 95px 0px 0px;
+  margin: 0 0 0 155px;
+}
 
 
 
 @media only screen and (max-width:768px) {
+
+  .image-top {
+    margin: 0 0 0 99px;
+  }
 
   .slides > div {
     width: 500px;
@@ -537,6 +580,11 @@ input:nth-of-type(3):checked ~ #carousel {
 }
  
 @media only screen and (max-width:480px) {
+
+    .image-top {
+      width: 50%;
+      margin: 0 0 0 100px;
+    }
 
     .burger {
       width: 42px;

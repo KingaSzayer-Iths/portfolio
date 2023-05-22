@@ -29,8 +29,12 @@ const IndexPage = ({data}) => {
                 <h2>{node.title}</h2>
                 <p>{node.description.description}</p>
               </div>
+              
+              <div className="image-top"></div>
               <Picture {...node.featuredImage}/>
             </article>
+            
+            <div className="image-top"></div>
       </main>
       <Footer/>
     </div>

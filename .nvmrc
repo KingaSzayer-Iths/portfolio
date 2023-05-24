@@ -2,6 +2,17 @@ v18.12.1
 
 https://www.w3schools.com/howto/howto_css_image_text.asp
 
+Jag är systemvetare i grunden,senaste 2 åren specialiserat mig till frontend utv.Engagerad, positiv och ambitiös,drivs av ständig utveckling
+Jag är en engagerad, positiv och ambitiös person som tycker om utmaningar med ständig utveckling. Har bra erfarenhet av att jobba i grupp men även individuellt och är van att vara metodiskt, strukturerad och noggrann. Jag drivs av innovation, insikter och hjärta samt gott kaffe.
+
+Mina kunskaper omfattar nedan:
+JavaScript, HTML, CSS, Figma, Vue, React, Node.JS, SQL, NoSQL, CMS, Contentful, WordPress, PHP.
+
+Invise är den nya generationens digitalbyrå specialiserad på personliga kundupplevelser och samspelet mellan marknad, sälj och teknik. Med resultat i fokus utmanar vi tillsammans olika sätt att kombinera data och kreativitet för att skapa smartare lösningar som driver tillväxt, stärker varumärken och överträffar företagsmål
+
+
+
+
 
 				<div class="row bottom">
 					<div class="col-xs-12">
@@ -74,3 +85,28 @@ div:hover {
 
 </body>
 </html>
+
+
+
+(2 linjer som kan separera ex. 2 artiklar)
+
+HTML
+<hr class="style8">
+
+CSS
+hr.style8 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+hr.style8:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+
+
+Youtube richtext
+https://www.google.com/search?q=contentful+rich+text+raw+youtube&oq=contentful+rich+text+raw+youtube&aqs=chrome..69i57j33i160l3.18500j0j15&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:93486e6a,vid:MSbpKwZMaXQ

@@ -4,7 +4,7 @@ import Nav from "./Nav"
 const Header = () => {
   return (
     <div class="header-container">
-      <div className="logo">Ks</div>
+      <div className="logo anim">Ks</div>
       <Nav/>
     </div>
   )
